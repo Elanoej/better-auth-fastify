@@ -1,0 +1,9 @@
+services:
+  drizzle-postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=mypassword
+      - POSTGRES_USER=user
+      - POSTGRES_DB=db
